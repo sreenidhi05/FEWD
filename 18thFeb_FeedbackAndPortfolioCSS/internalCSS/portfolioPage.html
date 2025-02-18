@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio Page</title>
+    <style>
+ 
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            padding: 20px;
+            background-color: #f4f4f4;
+        }
+
+        h1, h2 {
+            color: #333;
+        }
+
+        nav ul {
+            padding: 0;
+            background-color: #333;
+            overflow: hidden;
+            text-align: center;
+        }
+
+        nav ul li {
+            display: inline;
+            padding: 15px;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: white;
+            padding: 10px 20px;
+            display: inline-block;
+        }
+
+        nav ul li a:hover {
+            background-color: #575757; 
+            transition: background-color 0.3s ease-in-out;
+        }
+
+        section {
+            background: white;
+            padding: 15px;
+            margin-bottom: 15px;
+            border-radius: 5px;
+            box-shadow: 0px 0px 5px #ccc;
+        }
+
+        /* Table Styling */
+        table {
+            width: 80%;
+            border-collapse: collapse;
+            margin-top: 10px;
+            background: white;
+        }
+
+        th, td {
+            border: 1px solid #000;
+            padding: 8px;
+            text-align: center;
+        }
+
+        th {
+            background-color: #333;
+            color: white;
+        }
+
+        /* Form Styling */
+        input, textarea {
+            width: 80%;
+            padding: 10px;
+            margin-top: 5px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        input[type="submit"] 
+        {
+            background-color: #333;
+            color: white;
+            border: none;
+            cursor: pointer;
+            padding: 10px 50px;
+        }
+
+        input[type="submit"]:hover {
+            background-color: #575757;
+        }
+        
+    </style>
+</head>
+<body>
+    <head>
+        <h1>My Portfolio</h1>
+        <nav>
+            <ul>
+                <li><a href="#selfIntro">Self Introduction</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#projects">Projects/Work Experience</a></li>
+                <li><a href="#education">Education Profile</a></li>
+                <li><a href="#contact">Contact Information</a></li>
+                <li><a href="#feedback">Feedback</a></li>
+            </ul>
+        </nav>
+    </head>
+
+    <section>
+        <h2 id="selfIntro">Self Introduction</h2>
+        <div>
+            <p>
+                My name is Sreenidhi, I am a third year undergrad student at Keshav Memorial Institute of Technology (KMIT), majoring in Computer Science Engineering (CSE)
+            </p>
+        </div> 
+    </section>
+
+    <section>
+        <h2 id="skills">Skills</h2>
+        <div>
+            <ul>
+                <li><strong>Languages:</strong> Java, C++, Python, C </li>
+                <li><strong>Tools:</strong> Git, GitHub</li>
+                <li><strong>Frameworks and Libraries:</strong> MERN Stack (MongoDB, Express.js, React.js, Node.js)</li>
+                <li><strong>Skills: </strong>Problem Solving, Data Structures and Algorithms, Machine Learning Fundamentals, Large Language Models</li>
+            </ul>
+        </div>
+    </section>
+
+
+    <section>
+        <h2 id="projects">Projects</h2>
+        <div>
+            <ol>
+                <li>
+                    <strong>GenAI based application for product reviews - ReviewBot</strong>
+                    <p>Developed a Generative AI app with an integrated chatbot to analyze product reviews from diverse datasets.
+                        <br>Built a RAG chatbot for text summarization and sentiment analysis to enhance product review insights.</p>
+                    Github Link: <a href="https://github.com/sreenidhi05/ReviewBot">Project Github Link</a>
+                </li>
+                <br>
+                <li>
+                    <strong>Clinical decision-making and disease risk prediction - Saanjh Sahayak</strong> <br>
+                    <p> Developed a MERN stack app utilizing LLM models for health data import, record analysis, and risk prediction.
+                        <br>Designed an intuitive UI with a chatbot for a Clinical Decision Support System (CDSS) to enhance clinical
+                        decision-making for staff and doctors</p>
+                    Github Link: <a href="https://github.com/sreenidhi05/SaanjhSahayak">Project Github Link</a>
+                </li>
+                <br>
+                <li>
+                    <strong>CryptoCurrency Application using Blockchain - CryptoEstate</strong> <br>
+                    <p> Developed a MERN stack app utilizing LLM models for health data import, record analysis, and risk prediction.
+                        <br> Designed an intuitive UI with a chatbot for a Clinical Decision Support System (CDSS) to enhance clinical
+                         decision-making for staff and doctors</p>
+                    Github Link: <a href=" https://github.com/sreenidhi05/BlockChainG62">Project Github Link</a>
+                </li>
+                <br>
+            </ol>
+        </div>
+    </section>
+
+    <section id="education">
+        <h2>Education Profile</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>Degree</th>
+                    <th>Institution</th>
+                    <th>Year</th>
+                    <th>CGPA/Percentage</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>B.Tech - CSE</td>
+                    <td>Keshav Memorial Institute of Technology (KMIT)</td>
+                    <td>2022 - 2026</td>
+                    <td>8.5 CGPA</td>
+                </tr>
+                <tr>
+                    <td>Intermediate</td>
+                    <td>Sri Chaitanya Junior College</td>
+                    <td>2020 - 2022</td>
+                    <td>95%</td>
+                </tr>
+                <tr>
+                    <td>School</td>
+                    <td>St. Ann's High School</td>
+                    <td>2009 - 2020</td>
+                    <td>10 GPA</td>
+                </tr>
+            </tbody>
+        </table>
+    </section>
+
+    <section id="feedback">
+        <h2>Feedback</h2>
+        
+        <form action="#" method="post">
+            <label for="name">Name:</label><br>
+            <input type="text" id="name" name="name" placeholder="Enter your name" required>
+            <br>
+            <br>
+            <label for="email">Email:</label><br>
+            <input type="email" id="email" name="email" placeholder="Enter your email" required>
+            <br>
+            <br>
+            <label for="email">Feedback Content</label><br>
+            <textarea id="feedback" name="feedback" placeholder="Enter your feedback" required></textarea>
+            <br>
+            <br>
+            <input type="submit" value="Submit">
+        </form>
+    </section>
+
+    <section id="contact">
+        <h2>Contact Information</h2>
+         <form action="#" method="post">
+            <label for="name">Name:</label><br>
+            <input type="text" id="name" name="name" placeholder="Enter your name" required><br><br>
+    
+            <label for="email">Email:</label><br>
+            <input type="email" id="email" name="email" placeholder="Enter your email" required><br><br>
+
+
+    
+            <input type="submit" value="Submit">
+        </form>
+    </section>
+
+    <section>
+        <h2><strong>Contact Me  </strong></h2>
+        <p>
+            Contact Number: 9849xxxxxx <br><br>
+            Email: sarojasreenidhi@gmail.com <br><br>
+            LinkedIn: <a href="https://www.linkedin.com/in/saroja-sreenidhi/">Sreenidhi LinkedIn</a> <br><br>
+            Address: Hyderabad
+        </p>
+    </section>
+ 
+    
+</body>
+</html>

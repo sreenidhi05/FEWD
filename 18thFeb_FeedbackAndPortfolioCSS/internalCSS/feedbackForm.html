@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Feedback Form</title>
+    <style>
+        body {
+            background-color: whitesmoke;
+            display: flex;
+            font-family: Arial;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+        .container {
+            width: 50%;
+            background-color: white;
+            padding: 20px;
+            border-radius: 10px;
+        }
+        h2 {
+            text-align: center;
+        }
+        label {
+            font-weight: bold;
+            display: block;
+            margin-top: 10px;
+        }
+        input, textarea {
+            width: 90%;
+            padding: 8px;
+            margin-top: 5px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+       
+        button {
+            background-color: #5cb85c;
+            color:White;
+            padding: 10px;
+            margin-top: 15px;
+            margin-left: 150px;
+            font-size: 16px;
+            border-radius: 5px;
+            cursor: pointer;
+            width: 50%;
+            border:none;
+        }
+        button:hover {
+            background: #4cae4c;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h2>Feedback Form</h2>
+        <form>
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" placeholder="Enter your name"><br><br>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" placeholder="Enter your email"><br><br>
+
+            <label for="num">Phone:</label>
+            <input type="tel" id="num" name="num" placeholder="Enter your phone number"><br><br>
+
+            <label for="rating">Rating (1-5):</label>
+            <input type="number" id="rating" name="rating" min="1" max="5" required placeholder="Rate 1-5"><br><br>
+
+            <label for="query">Any Questions regarding product or service?</label>
+            <input type="text" id="query" name="query" placeholder="Type your question"><br><br>
+
+            <label for="comments">Additional Comments:</label>
+            <textarea id="comments" rows="3" name="comments" placeholder="Enter additional comments"></textarea><br><br>
+
+            <button type="submit">Submit</button>
+        </form>
+    </div>
+</body>
+</html>
