@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Feedback Form</title>
+    <link rel="stylesheet" href="feedback.css">
+</head>
+<body>
+    <div class="container">
+        <h2>Feedback Form</h2>
+        <form>
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" placeholder="Enter your name"><br><br>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" placeholder="Enter your email"><br><br>
+
+            <label for="num">Phone:</label>
+            <input type="tel" id="num" name="num" placeholder="Enter your phone number"><br><br>
+
+            <label for="rating">Rating (1-5):</label>
+            <input type="number" id="rating" name="rating" min="1" max="5" required placeholder="Rate 1-5"><br><br>
+
+            <label for="query">Any Questions regarding product or service?</label>
+            <input type="text" id="query" name="query" placeholder="Type your question"><br><br>
+
+            <label for="comments">Additional Comments:</label>
+            <textarea id="comments" rows="3" name="comments" placeholder="Enter additional comments"></textarea><br><br>
+
+            <button type="submit">Submit</button>
+        </form>
+    </div>
+</body>
+</html>
